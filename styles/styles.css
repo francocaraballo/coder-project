@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: relative;
+    padding: 12px 0;
+}
+
+.logo-title-container img,
+.logo-title-container div {
+    display: inline-block;
+}
+
+.logo-title-container img {
+    position: relative;
+    left: 50%;
+    top: 50%;
+}
+
+h1 {
+    display: none;
+}
+
+/* Nav */
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    margin: auto;
+}
+
+nav li {
+    list-style: none;
+    padding: 12px 14px;
+    margin: 0 4px;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    vertical-align: text-bottom;
+}
+
+/* Banner */
+
+/* Falta centrar el div con texto con respecto a la imagen */
+.banner-img {
+    background-image: url('../resources/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 65vh;
+    position: relative;
+}
+
+.banner-text-container{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}
+
+/* Info cards */
+
