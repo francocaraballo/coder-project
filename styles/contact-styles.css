@@ -1,0 +1,39 @@
+@import url('./styles.css');
+
+
+section {
+    width: 600px;
+    margin: 75px auto;
+    padding: 50px 50px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px black;
+    color: var(--color6);
+    background-color: var(--color4);
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+}
+
+input.contact-input,
+textarea.contact-input {
+    display: block;
+    margin: 25px auto;
+    padding: 15px 10px;
+    width: 90%;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 50px auto 0;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 14px;
+    font-size: 1.1rem;
+}

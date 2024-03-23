@@ -1,13 +1,44 @@
+/* General styles */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --color1: #EDB183;
+    --color2:#519872;
+    --color3:#016FB9;
+    --color4:#423E37;
+    --color5:#F4EBD9;
+    --color6:#FCFCF4;   /* Color del logo */
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Gantari", sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: var(--color6);
+}
+
+/* ---------- Pages styles ------------ */
 
 /* Header */
 header {
     position: relative;
     padding: 12px 0;
+    background-color: var(--color6);
 }
 
 .logo-title-container img,
@@ -29,6 +60,7 @@ h1 {
 
 nav {
     display: flex;
+    background-color: var(--color1);
 }
 
 nav ul {
@@ -36,9 +68,9 @@ nav ul {
     margin: auto;
 }
 
+
 nav li {
-    list-style: none;
-    padding: 12px 14px;
+    padding: 20px 14px;
     margin: 0 4px;
 }
 
@@ -47,6 +79,48 @@ li a {
     text-decoration: none;
     vertical-align: text-bottom;
 }
+
+/* Footer */
+
+footer h5 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-footer {
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0;
+    height: 200px;
+}
+
+.container-item-footer {
+    padding: 30px 5px;
+}
+
+/* Container Social */
+
+.social-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px
+}
+
+
+/* Section created by */
+.container-created {
+    display: block;
+    background-color: var(--color4);
+    color: white;
+    text-align: center;
+    padding: 7px 0;
+}
+
+
+/* ---------- Index sytles ---------- */
 
 /* Banner */
 
@@ -58,13 +132,103 @@ li a {
     width: 100%;
     height: 65vh;
     position: relative;
+    margin-bottom: 75px;
 }
+
 
 .banner-text-container{
+    width: 500px;
     position: absolute;
     top: 70%;
-    left: 50%;
+    left: calc(50% - 250px); /* CAMBIAR Y CENTRAR CON FLEXBOX*/
 }
 
-/* Info cards */
+/* Section images and text */
+
+.section-row {
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-img-info {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+    z-index: 5;
+    box-shadow: 1px 1px 5px black;
+}
+
+.container-img-info img {
+    width: 400px;
+}
+
+.container-img-info .inner-card  {
+    position:absolute;
+    display: block;
+    width: 100%;
+    top: 50%;
+}
+
+.inner-card h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color5);
+    margin-bottom: 50px;
+}
+
+.inner-card a {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    left: calc(50% - 40px);
+}
+
+.info-button {
+    padding: 7px 20px;
+    border-radius: 13px;
+    margin: 0 auto;
+    background-color: var(--color1);
+    transition: all .5s;
+    color: white;
+    border: none;
+    
+}
+
+.info-button:hover {
+    background-color: var(--color5);
+    color: black;
+}
+
+/* Envios - Cuotas - Compras mayoristas */
+.section-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+
+.item-container {
+    font-size: 1.2rem;
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-container h4 {
+    margin-right: 20px
+}
+
+.border-left-right {
+    border-left: solid var(--color4) 3px;
+    border-right: solid var(--color4) 3px;
+}
+
+
+
 
