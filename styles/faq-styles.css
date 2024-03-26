@@ -1,0 +1,42 @@
+@import url(./styles.css);
+
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 50px 0;
+}
+
+
+/* Articles styles */
+
+h3 {
+    font-size: 1.5rem;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+article {
+    margin-bottom: 50px;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ordened list */
+
+ol.steps-faq, ul.steps-faq {
+    margin-left: 100px;
+}
+
+ol.steps-faq li {
+    list-style-type: decimal;
+    margin-bottom: 7px;
+}
+
+/* Unordened list */
+
+ul.steps-faq li {
+    list-style-type: disc ;
+    margin-bottom: 7px;
+}

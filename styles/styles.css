@@ -24,9 +24,16 @@ a {
     text-decoration: none;
 }
 
-li {
+ul.nav-bar li {
     list-style: none;
+    transition: .3s;
+    cursor: pointer;
 }
+
+ul.nav-bar li:hover {
+    background-color: var(--color5);
+}
+
 
 body {
     background-color: var(--color6);
@@ -77,7 +84,12 @@ nav li {
 li a {
     color: black;
     text-decoration: none;
-    vertical-align: text-bottom;
+    vertical-align: top;
+}
+
+li i {
+    margin-right: 3px;
+
 }
 
 /* Footer */
@@ -85,6 +97,7 @@ li a {
 footer h5 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 1rem;
 }
 
 .container-footer {
@@ -109,6 +122,38 @@ footer h5 {
     width: 100px
 }
 
+.social-container ul li {
+    list-style-type: none;
+}
+
+/* Container Newslatter  */
+
+.container-item-footer form {
+    display: flex;
+    justify-content: center;
+}
+
+.container-item-footer input {
+    padding: 8px 3px;
+    border: none;
+    
+}
+
+.container-item-footer form button {
+    height: 36px;
+    width: 36px;
+    border: none;
+    background-color: var(--color4);
+    color: white;
+    cursor: pointer;
+    
+    
+}
+
+.container-item-footer form button svg {
+    width: 50%;
+    height: 50%;
+}
 
 /* Section created by */
 .container-created {
@@ -116,7 +161,12 @@ footer h5 {
     background-color: var(--color4);
     color: white;
     text-align: center;
-    padding: 7px 0;
+    padding: 10px 0;
+}
+
+.container-created h5 {
+    margin: 0;
+    font-size: 0.8rem;
 }
 
 
@@ -126,7 +176,8 @@ footer h5 {
 
 /* Falta centrar el div con texto con respecto a la imagen */
 .banner-img {
-    background-image: url('../resources/banner.jpg');
+    background-image: url('../resources/banner-2.jpg');
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -137,13 +188,34 @@ footer h5 {
 
 
 .banner-text-container{
-    width: 500px;
     position: absolute;
-    top: 70%;
-    left: calc(50% - 250px); /* CAMBIAR Y CENTRAR CON FLEXBOX*/
+    top: 45%;
+    left: 15%;
+}
+
+.banner-text-container h2 {
+    font-size: 4rem;
+    margin-bottom: 5px;
+}
+
+.banner-text-container p {
+    font-size: 1.5rem;
 }
 
 /* Section images and text */
+
+section > h4 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.line {
+    width: 200px;
+    height: 3px;
+    background-color: #423E37;
+    margin: 0 auto 100px auto;
+}
 
 .section-row {
     margin-bottom: 75px;
@@ -169,13 +241,13 @@ footer h5 {
     position:absolute;
     display: block;
     width: 100%;
-    top: 50%;
+    top: 42%;
 }
 
 .inner-card h5 {
     text-align: center;
     font-size: 1.5rem;
-    color: var(--color5);
+    color: var(--color6);
     margin-bottom: 50px;
 }
 
@@ -194,6 +266,7 @@ footer h5 {
     transition: all .5s;
     color: white;
     border: none;
+    cursor: pointer;
     
 }
 

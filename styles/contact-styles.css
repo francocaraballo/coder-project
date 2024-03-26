@@ -36,4 +36,10 @@ input[type="submit"] {
     border: none;
     border-radius: 14px;
     font-size: 1.1rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color1);
 }

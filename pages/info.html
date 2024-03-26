@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/png" href="../resources/favicon.png" />
         <link rel="stylesheet" href="../styles/styles.css" />
+        <link rel="stylesheet" href="../styles/about-us-styles.css" />
         <title>Odeur Comestics | Informacion</title>
     </head>
     <body>
@@ -20,8 +21,9 @@
                 </div>
             </div>
         </header>
+        
         <nav>
-            <ul>
+            <ul class="nav-bar">
                 <li>
                     <i>
                         <svg
@@ -116,6 +118,67 @@
                 </li>
             </ul>
         </nav>
+
+        <main>
+            <h2>Sobre nosotros</h2>
+            <div class="line"></div>
+            <section>
+                <article>
+                    <div class="container-img">
+                        <img
+                            src="../resources/glicerina-banner.jpg"
+                            alt="Varios jabones verdes"
+                        />
+                    </div>
+                    <div class="container-text">
+                        <h4>El emprendimiento</h4>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Ex aperiam voluptas nulla consectetur,
+                            voluptatibus earum ullam. Eius, placeat ut facere
+                            sunt omnis doloremque odio minima perferendis
+                            consequuntur quasi nesciunt nulla!
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <div class="container-text">
+                        <h4>Nuestro compromiso</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Facere, impedit. Inventore nesciunt eaque
+                            cupiditate nam voluptate voluptas dolor, suscipit
+                            modi voluptatum cum eum pariatur reprehenderit
+                            molestiae et! Saepe, rem deleniti!
+                        </p>
+                    </div>
+                    <div class="container-img">
+                        <img
+                            src="../resources/image-banner-2.png"
+                            alt="Taza de avena"
+                        />
+                    </div>
+                </article>
+                <article>
+                    <div class="container-img">
+                        <img
+                            src="../resources/banner.jpg"
+                            alt="Carbon activado"
+                        />
+                    </div>
+                    <div class="container-text">
+                        <h4>Nuestros productos</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Earum porro incidunt commodi ad saepe nesciunt
+                            natus aut, ipsa tempore odit fugiat quis nobis a
+                            illo. Assumenda repellat placeat beatae tempora?
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
         <footer>
             <div class="container-footer">
                 <div class="container-item-footer">
@@ -213,14 +276,19 @@
                     <p>odeurcomestics@example.com</p>
                 </div>
                 <div class="container-item-footer">
-                    <h5>Newsletter</h5>
-                    <!-- armar bien el form -->
-                    <input
-                        type="text"
-                        name="email"
-                        id="email-input"
-                        placeholder="Email"
-                    />
+                    <form action="#" method="post">
+                        <input
+                            type="text"
+                            name="email"
+                            id="email-input"
+                            placeholder="Email"
+                        />
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
             <div class="container-created">

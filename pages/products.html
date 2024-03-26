@@ -22,7 +22,7 @@
             </div>
         </header>
         <nav>
-            <ul>
+            <ul class="nav-bar">
                 <li>
                     <i>
                         <svg
@@ -119,6 +119,7 @@
         </nav>
         <main>
             <h2>Nuestros productos</h2>
+            <div class="line"></div>
             <!-- Lista de productos -->
             <section>
                 <div class="container-products">
@@ -153,7 +154,7 @@
                                 <p class="product-category">Exfoliante</p>
                                 <p class="product-weight">40 g</p>
                             </div>
-                            <h6>Jabon de Carbon Activado</h6>
+                            <h6>Jabon de carbon activado</h6>
                             <p class="product-price">$799</p>
                             <button>Comprar</button>
                         </div>
@@ -189,7 +190,7 @@
                                 <p class="product-category">Hidratacion</p>
                                 <p class="product-weight">90 g</p>
                             </div>
-                            <h6>Jabon de Avena</h6>
+                            <h6>Jabon de avena</h6>
                             <p class="product-price">$999</p>
                             <button>Comprar</button>
                         </div>
@@ -332,14 +333,19 @@
                     <p>odeurcomestics@example.com</p>
                 </div>
                 <div class="container-item-footer">
-                    <h5>Newsletter</h5>
-                    <!-- armar bien el form -->
-                    <input
-                        type="text"
-                        name="email"
-                        id="email-input"
-                        placeholder="Email"
-                    />
+                    <form action="#" method="post">
+                        <input
+                            type="text"
+                            name="email"
+                            id="email-input"
+                            placeholder="Email"
+                        />
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
             <div class="container-created">

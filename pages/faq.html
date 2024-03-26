@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/png" href="../resources/favicon.png" />
         <link rel="stylesheet" href="../styles/styles.css" />
+        <link rel="stylesheet" href="../styles/faq-styles.css">
         <title>Odeur Comestics | FAQ</title>
     </head>
     <body>
@@ -21,7 +22,7 @@
             </div>
         </header>
         <nav>
-            <ul>
+            <ul class="nav-bar">
                 <li>
                     <i>
                         <svg
@@ -116,6 +117,69 @@
                 </li>
             </ul>
         </nav>
+
+        <main>
+            <h2>Preguntas frecuentes</h2>
+            <div class="line"></div>
+            <section>
+                    <article>
+                        <h3>Como comprar</h3>
+                        <ol class="steps-faq">
+                            <li>Elegir el producto deseado</li>
+                            <li>
+                                Haz click en "Comprar" y se agregara al carrito
+                            </li>
+                            <li>
+                                Puedes seguir agregando productos al carrito,
+                                sino haz click en el mismo para finalizar la
+                                comprar
+                            </li>
+                            <li>
+                                Completa tus datos de contacto y haz click en
+                                "Continuar"
+                            </li>
+                            <li>Selecciona el metodo de envio que desees</li>
+                            <li>Elegi el metodo de pago</li>
+                            <li>
+                                Recuerda revisar los datos personales y la
+                                direccion de envio
+                            </li>
+                            <li>Luego haz click en "Confirmar la compra"</li>
+                            <li>
+                                Seras redirigido a otra pantalla para que
+                                completes los datos sobre la forma de pago
+                                elegida
+                            </li>
+                            <li>
+                                Una vez acreditado el pago, haremos el envio
+                                correspondiente de los productos que hayas
+                                comprado
+                            </li>
+                        </ol>
+                    </article>
+                    <article>
+                        <h3>Medios de pago</h3>
+                        <ul class="steps-faq">
+                            <li>Mercado pago</li>
+                            <li>Transferencia</li>
+                            <li>Tarjetas de debito</li>
+                            <li>Tarjetas de credito</li>
+                            <li>Efectivo</li>
+                        </ul>
+                    </article>
+                    <article >
+                        <h3>Envios</h3>
+                        <ul class="steps-faq">
+                            <li>A domicilio: Andreani - Oca - Mercado Envios</li>
+                            <li>Preparamos y despachamos los pedidos los dias miercoles</li>
+                            <li>Tiempo de entraga aproximado: Entre 4 y 5 dias habiles a partir  del despacho del pedido</li>
+                            <li>Retiro en el local: Lunes a viernes de 9 a 17 hs</li>
+                            <li><strong>Importante:</strong> Los correos pueden sufrir algunas demoras. Ante cualquier consulta comunicarse con nosotros al WhatsApp</li>
+                        </ul>
+                    </article>
+            </section>
+        </main>
+
         <footer>
             <div class="container-footer">
                 <div class="container-item-footer">
@@ -213,14 +277,19 @@
                     <p>odeurcomestics@example.com</p>
                 </div>
                 <div class="container-item-footer">
-                    <h5>Newsletter</h5>
-                    <!-- armar bien el form -->
-                    <input
-                        type="text"
-                        name="email"
-                        id="email-input"
-                        placeholder="Email"
-                    />
+                    <form action="#" method="post">
+                        <input
+                            type="text"
+                            name="email"
+                            id="email-input"
+                            placeholder="Email"
+                        />
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
             <div class="container-created">

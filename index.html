@@ -21,7 +21,7 @@
             </div>
         </header>
         <nav>
-            <ul>
+            <ul class="nav-bar">
                 <li>
                     <i>
                         <svg
@@ -120,12 +120,14 @@
             <!-- Banner image -->
             <div class="banner-img">
                 <div class="banner-text-container">
-                    <h2>Todo para el cuidado de tu piel</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <h2>ODEUR</h2>
+                    <p>Encontra todo lo que necesita tu piel</p>
                 </div>
             </div>
             <!-- Seccion de 4 imagenes de productos que dirigen a la informacion de los mismos -->
             <section>
+                <h4>Conoce los beneficios de nuestros productos</h4>
+                <div class="line"></div>
                 <div class="section-row">
                     <!-- Primera imagen -->
                     <div class="container-img-info">
@@ -151,7 +153,7 @@
                             alt="Jabon de avena"
                         />
                         <div class="inner-card">
-                            <h5>Carbon activado</h5>
+                            <h5>Avena</h5>
                             <a href="#">
                                 <button class="info-button">+ Info</button>
                             </a>
@@ -168,7 +170,7 @@
                             alt="Jabon de arcilla verde"
                         />
                         <div class="inner-card">
-                            <h5>Carbon activado</h5>
+                            <h5>Arcilla verde</h5>
                             <a href="#">
                                 <button class="info-button">+ Info</button>
                             </a>
@@ -183,7 +185,7 @@
                             alt="Jabon de glicerina"
                         />
                         <div class="inner-card">
-                            <h5>Carbon activado</h5>
+                            <h5>Glicerina</h5>
                             <a href="#">
                                 <button class="info-button">+ Info</button>
                             </a>
@@ -238,11 +240,14 @@
                             width="16"
                             height="16"
                             fill="currentColor"
-                            class="bi bi-box2-heart-fill"
+                            class="bi bi-box2-heart"
                             viewBox="0 0 16 16"
                         >
                             <path
-                                d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zM8.5 4h6l.5.667V5H1v-.333L1.5 4h6V1h1zM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+                                d="M8 7.982C9.664 6.309 13.825 9.236 8 13 2.175 9.236 6.336 6.31 8 7.982"
+                            />
+                            <path
+                                d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zm0 1H7.5v3h-6zM8.5 4V1h3.75l2.25 3zM15 5v10H1V5z"
                             />
                         </svg>
                     </i>
@@ -347,13 +352,19 @@
                 </div>
                 <div class="container-item-footer">
                     <h5>Newsletter</h5>
-                    <!-- armar bien el form -->
-                    <input
-                        type="text"
-                        name="email"
-                        id="email-input"
-                        placeholder="Email"
-                    />
+                    <form action="#" method="post">
+                        <input
+                            type="text"
+                            name="email"
+                            id="email-input"
+                            placeholder="Email"
+                        />
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
             <div class="container-created">
