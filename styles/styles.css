@@ -48,15 +48,14 @@ header {
     background-color: var(--color6);
 }
 
-.logo-title-container img,
-.logo-title-container div {
-    display: inline-block;
+.logo-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-title-container img {
-    position: relative;
-    left: 50%;
-    top: 50%;
+    width: 100px;
 }
 
 h1 {
@@ -67,12 +66,16 @@ h1 {
 
 nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color1);
 }
 
 nav ul {
     display: flex;
     margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -305,3 +308,25 @@ section > h4 {
 
 
 
+@media (max-width: 768px) {
+    nav {
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    nav li {
+        padding: 10px;
+        margin: 0;
+        
+    }
+
+    ul.nav-bar li a {
+        display: none;
+    }
+
+    
+}
