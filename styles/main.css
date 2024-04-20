@@ -62,7 +62,7 @@ h1 {
     display: none;
 }
 
-/* Nav */
+/* ------ Nav ------ */
 
 nav {
     display: flex;
@@ -95,7 +95,7 @@ li i {
 
 }
 
-/* Footer */
+/* ------ Footer ------ */
 
 footer h5 {
     text-align: center;
@@ -116,7 +116,7 @@ footer h5 {
     padding: 30px 5px;
 }
 
-/* Container Social */
+/* ------ Container Social ------ */
 
 .social-container ul {
     display: flex;
@@ -129,7 +129,7 @@ footer h5 {
     list-style-type: none;
 }
 
-/* Container Newslatter  */
+/* ------ Container Newslatter ------  */
 
 .container-item-footer form {
     display: flex;
@@ -158,7 +158,8 @@ footer h5 {
     height: 50%;
 }
 
-/* Section created by */
+/* ------ Section created by ------ */
+
 .container-created {
     display: block;
     background-color: var(--color4);
@@ -173,140 +174,7 @@ footer h5 {
 }
 
 
-/* ---------- Index sytles ---------- */
-
-/* Banner */
-
-/* Falta centrar el div con texto con respecto a la imagen */
-.banner-img {
-    background-image: url('../resources/banner-2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 65vh;
-    position: relative;
-    margin-bottom: 75px;
-}
-
-
-.banner-text-container{
-    position: absolute;
-    top: 45%;
-    left: 15%;
-}
-
-.banner-text-container h2 {
-    font-size: 4rem;
-    margin-bottom: 5px;
-}
-
-.banner-text-container p {
-    font-size: 1.5rem;
-}
-
-/* Section images and text */
-
-section > h4 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.line {
-    width: 200px;
-    height: 3px;
-    background-color: #423E37;
-    margin: 0 auto 100px auto;
-}
-
-.section-row {
-    margin-bottom: 75px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.container-img-info {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    overflow: hidden;
-    border-radius: 15px;
-    z-index: 5;
-    box-shadow: 1px 1px 5px black;
-}
-
-.container-img-info img {
-    width: 400px;
-}
-
-.container-img-info .inner-card  {
-    position:absolute;
-    display: block;
-    width: 100%;
-    top: 42%;
-}
-
-.inner-card h5 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--color6);
-    margin-bottom: 50px;
-}
-
-.inner-card a {
-    position: relative;
-    display: inline-block;
-    width: 80px;
-    left: calc(50% - 40px);
-}
-
-.info-button {
-    padding: 7px 20px;
-    border-radius: 13px;
-    margin: 0 auto;
-    background-color: var(--color1);
-    transition: all .5s;
-    color: white;
-    border: none;
-    cursor: pointer;
-    
-}
-
-.info-button:hover {
-    background-color: var(--color5);
-    color: black;
-}
-
-/* Envios - Cuotas - Compras mayoristas */
-.section-row-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 0;
-}
-
-
-.item-container {
-    font-size: 1.2rem;
-    height: 80px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.item-container h4 {
-    margin-right: 20px
-}
-
-.border-left-right {
-    border-left: solid var(--color4) 3px;
-    border-right: solid var(--color4) 3px;
-}
-
-
-
+/* Media queries */
 
 @media (max-width: 768px) {
     nav {
