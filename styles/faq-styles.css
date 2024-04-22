@@ -40,3 +40,38 @@ ul.steps-faq li {
     list-style-type: disc ;
     margin-bottom: 7px;
 }
+
+@media (max-width: 860px) {
+    article {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    article {
+        width: 90%;
+    }
+
+    h3 {
+        margin-left: 25px;
+    }
+    
+    ol.steps-faq, ul.steps-faq {
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 425px) {
+    article {
+        width: 100%;
+
+    }
+
+    h3 {
+        margin-left: 15px;
+    }
+
+    ol.steps-faq, ul.steps-faq {
+        margin-left: 50px;
+    }
+}
