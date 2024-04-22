@@ -52,6 +52,7 @@ section > h4 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     justify-items: center;
+    row-gap: 40px;
     
 }
 
@@ -119,11 +120,15 @@ section > h4 {
     margin: 40px 0;
 }
 
+.section-row-center .line {
+    transform: rotate(90deg);
+    width: 50px;
+    margin: 0;
+}
 
 .item-container {
     font-size: 1.2rem;
-    height: 80px;
-    width: 200px;
+    padding: 30px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,12 +137,6 @@ section > h4 {
 .item-container h4 {
     margin-right: 20px
 }
-
-.border-left-right {
-    border-left: solid var(--color4) 3px;
-    border-right: solid var(--color4) 3px;
-}
-
 
 /* Media queries */
 
@@ -152,10 +151,17 @@ section > h4 {
         grid-template-columns: 1fr;
         row-gap: 30px;
     }
+
+    .section-row-center {
+        flex-direction: column;
+    }
+
+    .section-row-center .line {
+        transform: rotate(0deg);
+        width: 75px;
+        
+    }
 }
 
 /* Acomodar el footer y seccion de 3 items */
 
-@media (max-width: 600px) {
-
-}
