@@ -1,16 +1,25 @@
 @import url('./styles.css');
 
 
-section {
-    width: 600px;
-    margin: 75px auto;
-    padding: 50px 50px;
-    border-radius: 15px;
-    box-shadow: 1px 1px 5px black;
-    color: var(--color6);
-    background-color: var(--color4);
-
+input[type="submit"] {
+    display: block;
+    margin: 50px auto 0;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 14px;
+    font-size: 1.1rem;
+    transition: .5s;
+    cursor: pointer;
+    background-color: var(--color1);
 }
+
+input[type="submit"]:hover {
+    background-color: var(--color5);
+} 
+
+
+
+/* 
 
 h2 {
     text-align: center;
@@ -29,17 +38,6 @@ textarea.contact-input {
     border: none;
 }
 
-input[type="submit"] {
-    display: block;
-    margin: 50px auto 0;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 14px;
-    font-size: 1.1rem;
-    transition: .5s;
-    cursor: pointer;
-}
 
-input[type="submit"]:hover {
-    background-color: var(--color1);
-}
+
+*/
