@@ -201,7 +201,7 @@ footer h5 {
         
     }
 
-    ul.nav-bar li a {
+    ul.nav-bar li span{
         display: none;
     }
     
