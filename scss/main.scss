@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap');
+
+$color1:#EDB183;
+$color2:#519872;
+$color3:#016FB9;
+$color4:#423E37;
+$color6:#FCFCF4;
+$font-family: "Gantari", sans-serif;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
