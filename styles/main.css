@@ -43,7 +43,6 @@ body {
 
 /* Header */
 header {
-    position: relative;
     padding: 12px 0;
     background-color: var(--color6);
 }

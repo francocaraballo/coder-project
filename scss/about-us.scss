@@ -1,0 +1,72 @@
+// LInk archivo de variables
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 50px 0;
+}
+
+.line {
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 150px;
+
+    article {
+        width: 80%;
+        margin: 80px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 20px;
+
+        .container-img {
+            width: 350px;
+            height: 350px;
+            overflow: hidden;
+            display: flex;
+            align-items: stretch;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .container-text {
+            width: 60%;
+            margin: auto;
+
+            h4 {
+                text-align: center;
+                margin-bottom: 30px;
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 800px) {
+
+    section {
+        article {
+            flex-direction: column;
+
+            .container-img {
+                order: 1;
+            }
+
+            .container-text {
+                width: 100%;
+                order: 2;
+                h4 {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

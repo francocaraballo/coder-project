@@ -86,8 +86,8 @@ section > h4 {
 .inner-card a {
     position: relative;
     display: inline-block;
-    width: 80px;
-    left: calc(50% - 40px);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .info-button {

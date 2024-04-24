@@ -1,5 +1,4 @@
-@import url('./styles.css');
-
+// Archivo de variables
 
 input[type="submit"] {
     display: block;
@@ -10,9 +9,9 @@ input[type="submit"] {
     font-size: 1.1rem;
     transition: .5s;
     cursor: pointer;
-    background-color: var(--color1);
-}
+    background-color: $color1;
 
-input[type="submit"]:hover {
-    background-color: var(--color5);
-} 
+    &:hover {
+        background-color: $color5;
+    }
+}

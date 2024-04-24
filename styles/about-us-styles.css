@@ -59,21 +59,14 @@ article {
     
     .container-text {
         width: 100%;
+        order: 2;
+    }
+
+    .container-img {
+        order: 1;
     }
 
     h4 {
         margin-top: 10px;
     }
-
-
-
-    section:nth-child(3) article .container-img {
-        order: 1;
-    }
-    
-    section:nth-child(3) article .container-text {
-        order: 2;
-    }
-
-
 }

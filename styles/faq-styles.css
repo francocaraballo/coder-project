@@ -23,11 +23,11 @@ article {
     margin-right: auto;
 }
 
-/* Ordened list */
-
 ol.steps-faq, ul.steps-faq {
     margin-left: 100px;
 }
+
+/* Ordened list */
 
 ol.steps-faq li {
     list-style-type: decimal;
