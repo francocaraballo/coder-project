@@ -1,0 +1,61 @@
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 50px 0;
+}
+
+article {
+  margin-bottom: 50px;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+article h3 {
+  font-size: 1.5rem;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+article ol {
+  margin-left: 100px;
+}
+article ol li {
+  list-style-type: decimal;
+  margin-bottom: 7px;
+}
+article ul {
+  margin-left: 100px;
+}
+article ul li {
+  list-style-type: disc;
+  margin-bottom: 7px;
+}
+
+@media (max-width: 860px) {
+  article {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  article {
+    width: 90%;
+  }
+  article h3 {
+    margin-left: 25px;
+  }
+  article ol, article ul {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 425px) {
+  article {
+    width: 100%;
+  }
+  article h3 {
+    margin-left: 15px;
+  }
+  article ol, article ul {
+    margin-left: 50px;
+  }
+}
+
+/*# sourceMappingURL=faq.css.map */

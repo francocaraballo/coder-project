@@ -1,6 +1,6 @@
+@use 'var';
 @import url("https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap");
 
-@use 'var';
 
 $font-family: "Gantari", sans-serif;
 
@@ -12,7 +12,7 @@ $font-family: "Gantari", sans-serif;
 }
 
 body {
-    background-color: $color6;
+    background-color: var.$color6;
 }
 
 a {
@@ -61,12 +61,11 @@ nav {
         a {
             color: black;
             text-decoration: none;
-            vertical-align: top;
+            display: flex;
+            gap: 5px;
         }
 
-        i {
-            margin-right: 3px;
-        }
+        
     }
 }
 

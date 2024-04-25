@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gantari", sans-serif;
+}
+
+body {
+  background-color: #fcfcf4;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 12px 0;
+  background-color: #fcfcf4;
+}
+header h1 {
+  display: none;
+}
+header .logo-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo-title-container img {
+  width: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edb183;
+}
+nav ul {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+nav li {
+  padding: 20px 14px;
+  margin: 0 4px;
+}
+nav li a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  gap: 5px;
+}
+
+ul.nav-bar li {
+  list-style: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+ul.nav-bar li:hover {
+  background-color: #f4ebd9;
+}
+
+footer {
+  background-color: beige;
+}
+footer h5 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+footer .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+footer .footer-container-item {
+  padding: 30px 5px;
+}
+footer .footer-container-item .social-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+footer .footer-container-item .social-container ul li {
+  list-style: none;
+}
+footer .footer-container-item form {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-container-item form input {
+  padding: 8px 3px;
+  border: none;
+}
+footer .footer-container-item form button {
+  height: 36px;
+  width: 36px;
+  border: none;
+  background-color: #423e37;
+  color: white;
+  cursor: pointer;
+}
+footer .footer-container-item form button svg {
+  width: 50%;
+  height: 50%;
+}
+footer .container-created {
+  display: block;
+  background-color: #423e37;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+footer .container-created h5 {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.line {
+  width: 200px;
+  height: 3px;
+  background-color: #423E37;
+  margin: 0 auto 100px auto;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: block;
+    margin: 0 auto;
+  }
+  nav ul {
+    gap: 20px;
+  }
+  nav ul li {
+    padding: 10px;
+    margin: 0;
+  }
+  ul.nav-bar li span {
+    display: none;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
