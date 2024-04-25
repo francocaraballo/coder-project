@@ -1,3 +1,5 @@
+@use 'var';
+
 .banner-img {
     background-image: url('../resources/banner-2.jpg');
     background-position: center;
@@ -62,7 +64,7 @@ section {
             h5 {
                 text-align: center;
                 font-size: 1.5rem;
-                color: $color6;
+                color: var.$color6;
                 margin-bottom: 50px;
             }
 
@@ -76,14 +78,14 @@ section {
                     padding: 7px 20px;
                     border-radius: 13px;
                     margin: 0 auto;
-                    background-color: var(--color1);
+                    background-color: var.$color1;
                     transition: all .5s;
                     color: white;
                     border: none;
                     cursor: pointer;
 
                     &:hover {
-                        background-color: var(--color5);
+                        background-color: var.$color5;
                         color: black;
                     }
                 }

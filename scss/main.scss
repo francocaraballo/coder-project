@@ -1,11 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap");
 
-$color1: #edb183;
-$color2: #519872;
-$color3: #016fb9;
-$color4: #423e37;
-$color5: #f4ebd9;
-$color6: #fcfcf4;
+@use 'var';
+
 $font-family: "Gantari", sans-serif;
 
 * {
@@ -28,7 +24,7 @@ a {
 
 header {
     padding: 12px 0;
-    background-color: $color6;
+    background-color: var.$color6;
 
     h1 {
         display: none;
@@ -49,7 +45,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color1;
+    background-color: var.$color1;
 
     ul {
         display: flex;
@@ -82,7 +78,7 @@ ul.nav-bar {
         cursor: pointer;
 
         &:hover {
-            background-color: $color5;
+            background-color: var.$color5;
         }
     }
 }
@@ -134,7 +130,7 @@ footer {
                 height: 36px;
                 width: 36px;
                 border: none;
-                background-color: var(--color4);
+                background-color: var.$color4;
                 color: white;
                 cursor: pointer;
 
@@ -149,7 +145,7 @@ footer {
 
     .container-created {
         display: block;
-        background-color: var(--color4);
+        background-color: var.$color4;
         color: white;
         text-align: center;
         padding: 10px 0;
