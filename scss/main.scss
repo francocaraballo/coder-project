@@ -1,10 +1,10 @@
-@use '../utilities/colors';
-@use '../utilities/font';
-@use '../utilities/reseteo';
+@import './utilities/colors';
+@import './utilities/font';
+@import './utilities/reseteo';
 
-@use 'header';
-@use 'nav-bar';
-@use 'footer';
+@import './layout/header';
+@import './layout/nav-bar';
+@import './layout/footer';
 
 body {
     background-color: $color6;

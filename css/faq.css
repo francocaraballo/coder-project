@@ -1,19 +1,61 @@
-/* Error: Undefined variable.
- *   ,
- * 3 |     background-color: $color6;
- *   |                       ^^^^^^^
- *   '
- *   scss\layout\_header.scss 3:23  @use
- *   scss\layout\_layout.scss 5:1   @use
- *   scss\faq.scss 1:1              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      background-color: $color6;\d\a   \2502                        ^^^^^^^\a   \2575 \a   scss\\layout\\_header.scss 3:23  @use\a   scss\\layout\\_layout.scss 5:1   @use\a   scss\\faq.scss 1:1              root stylesheet";
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 50px 0;
 }
+
+article {
+  margin-bottom: 50px;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+article h3 {
+  font-size: 1.5rem;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+article ol {
+  margin-left: 100px;
+}
+article ol li {
+  list-style-type: decimal;
+  margin-bottom: 7px;
+}
+article ul {
+  margin-left: 100px;
+}
+article ul li {
+  list-style-type: disc;
+  margin-bottom: 7px;
+}
+
+@media (max-width: 860px) {
+  article {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  article {
+    width: 90%;
+  }
+  article h3 {
+    margin-left: 25px;
+  }
+  article ol, article ul {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 425px) {
+  article {
+    width: 100%;
+  }
+  article h3 {
+    margin-left: 15px;
+  }
+  article ol, article ul {
+    margin-left: 50px;
+  }
+}
+
+/*# sourceMappingURL=faq.css.map */

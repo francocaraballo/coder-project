@@ -1,19 +1,16 @@
-/* Error: Undefined variable.
- *   ,
- * 3 |     background-color: $color6;
- *   |                       ^^^^^^^
- *   '
- *   scss\layout\_header.scss 3:23  @use
- *   scss\layout\_layout.scss 5:1   @use
- *   scss\contact.scss 1:1          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
+input[type=submit] {
   display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      background-color: $color6;\d\a   \2502                        ^^^^^^^\a   \2575 \a   scss\\layout\\_header.scss 3:23  @use\a   scss\\layout\\_layout.scss 5:1   @use\a   scss\\contact.scss 1:1          root stylesheet";
+  margin: 50px auto 0;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #edb183;
 }
+input[type=submit]:hover {
+  background-color: #f4ebd9;
+}
+
+/*# sourceMappingURL=contact.css.map */

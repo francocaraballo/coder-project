@@ -1,17 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Gantari", sans-serif;
-}
-
-body {
-  background-color: #fcfcf4;
-}
-
-a {
-  text-decoration: none;
 }
 
 header {
@@ -62,6 +55,25 @@ ul.nav-bar li:hover {
   background-color: #f4ebd9;
 }
 
+@media (max-width: 768px) {
+  nav {
+    display: block;
+    margin: 0 auto;
+  }
+  nav ul {
+    gap: 20px;
+  }
+  nav ul li {
+    padding: 10px;
+    margin: 0;
+  }
+  ul.nav-bar li span {
+    display: none;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+}
 footer {
   background-color: beige;
 }
@@ -120,31 +132,19 @@ footer .container-created h5 {
   font-size: 0.8rem;
 }
 
+body {
+  background-color: #fcfcf4;
+}
+
+a {
+  text-decoration: none;
+}
+
 .line {
   width: 200px;
   height: 3px;
   background-color: #423E37;
   margin: 0 auto 100px auto;
-}
-
-@media (max-width: 768px) {
-  nav {
-    display: block;
-    margin: 0 auto;
-  }
-  nav ul {
-    gap: 20px;
-  }
-  nav ul li {
-    padding: 10px;
-    margin: 0;
-  }
-  ul.nav-bar li span {
-    display: none;
-  }
-  .footer-container {
-    flex-direction: column;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

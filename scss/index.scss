@@ -1,4 +1,4 @@
-@use './layout/layout';
+@import './utilities/colors';
 
 .banner-img {
     background-image: url('../resources/banner-2.jpg');
@@ -64,7 +64,7 @@ section {
             h5 {
                 text-align: center;
                 font-size: 1.5rem;
-                color: layout.$color6;
+                color: $color6;
                 margin-bottom: 50px;
             }
 
@@ -78,14 +78,14 @@ section {
                     padding: 7px 20px;
                     border-radius: 13px;
                     margin: 0 auto;
-                    background-color: layout.$color1;
+                    background-color: $color1;
                     transition: all .5s;
                     color: white;
                     border: none;
                     cursor: pointer;
 
                     &:hover {
-                        background-color: layout.$color5;
+                        background-color: $color5;
                         color: black;
                     }
                 }

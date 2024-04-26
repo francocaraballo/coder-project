@@ -1,19 +1,60 @@
-/* Error: Undefined variable.
- *   ,
- * 3 |     background-color: $color6;
- *   |                       ^^^^^^^
- *   '
- *   scss\layout\_header.scss 3:23  @use
- *   scss\layout\_layout.scss 5:1   @use
- *   scss\about-us.scss 1:1         root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      background-color: $color6;\d\a   \2502                        ^^^^^^^\a   \2575 \a   scss\\layout\\_header.scss 3:23  @use\a   scss\\layout\\_layout.scss 5:1   @use\a   scss\\about-us.scss 1:1         root stylesheet";
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 50px 0;
 }
+
+.line {
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 150px;
+}
+section article {
+  width: 80%;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+section article .container-img {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
+section article .container-img img {
+  width: 100%;
+  object-fit: cover;
+}
+section article .container-text {
+  width: 60%;
+  margin: auto;
+}
+section article .container-text h4 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.7rem;
+}
+
+@media (max-width: 800px) {
+  section article {
+    flex-direction: column;
+  }
+  section article .container-img {
+    order: 1;
+  }
+  section article .container-text {
+    width: 100%;
+    order: 2;
+  }
+  section article .container-text h4 {
+    margin-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=about-us.css.map */

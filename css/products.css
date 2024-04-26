@@ -1,19 +1,69 @@
-/* Error: Undefined variable.
- *   ,
- * 3 |     background-color: $color6;
- *   |                       ^^^^^^^
- *   '
- *   scss\layout\_header.scss 3:23  @use
- *   scss\layout\_layout.scss 5:1   @use
- *   scss\products.scss 1:1         root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      background-color: $color6;\d\a   \2502                        ^^^^^^^\a   \2575 \a   scss\\layout\\_header.scss 3:23  @use\a   scss\\layout\\_layout.scss 5:1   @use\a   scss\\products.scss 1:1         root stylesheet";
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 50px 0;
 }
+
+.container-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.container-products .product-card {
+  width: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 2px 2px 9px -3px black;
+}
+.container-products .product-card .product-img-container {
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+}
+.container-products .product-card .product-img-container img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+.container-products .product-card .product-img-container img:hover {
+  transform: scale(1.3);
+}
+.container-products .product-card .card-info {
+  margin: 8px 10px;
+}
+.container-products .product-card .card-info .category-weight {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+}
+.container-products .product-card .card-info h6 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+.container-products .product-card .card-info .product-price {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+}
+.container-products .product-card .card-info button {
+  display: block;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 80%;
+  background-color: transparent;
+  border-color: #edb183;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+  transition: all 0.5s;
+}
+.container-products .product-card .card-info button:hover {
+  background-color: #edb183;
+}
+
+/*# sourceMappingURL=products.css.map */
