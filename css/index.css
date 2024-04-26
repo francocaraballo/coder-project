@@ -1,127 +1,19 @@
-.banner-img {
-  background-image: url("../resources/banner-2.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 65vh;
-  position: relative;
-  margin-bottom: 75px;
-}
-.banner-img .banner-text-container {
-  position: absolute;
-  top: 45%;
-  left: 15%;
-}
-.banner-img .banner-text-container h2 {
-  font-size: 4rem;
-  margin-bottom: 5px;
-}
-.banner-img .banner-text-container p {
-  font-size: 1.5rem;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 3 |     background-color: $color6;
+ *   |                       ^^^^^^^
+ *   '
+ *   scss\layout\_header.scss 3:23  @use
+ *   scss\layout\_layout.scss 5:1   @use
+ *   scss\index.scss 1:1            root stylesheet */
 
-section .title-section {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.grid-container {
-  padding: 0px 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  justify-items: center;
-  row-gap: 40px;
-}
-.grid-container .container-img-info {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  overflow: hidden;
-  border-radius: 15px;
-  z-index: 5;
-  box-shadow: 1px 1px 5px black;
-}
-.grid-container .container-img-info img {
-  width: 400px;
-}
-.grid-container .container-img-info .inner-card {
-  position: absolute;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  width: 100%;
-  top: 42%;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      background-color: $color6;\d\a   \2502                        ^^^^^^^\a   \2575 \a   scss\\layout\\_header.scss 3:23  @use\a   scss\\layout\\_layout.scss 5:1   @use\a   scss\\index.scss 1:1            root stylesheet";
 }
-.grid-container .container-img-info .inner-card h5 {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #fcfcf4;
-  margin-bottom: 50px;
-}
-.grid-container .container-img-info .inner-card a {
-  position: relative;
-  display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.grid-container .container-img-info .inner-card a .info-button {
-  padding: 7px 20px;
-  border-radius: 13px;
-  margin: 0 auto;
-  background-color: #edb183;
-  transition: all 0.5s;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-.grid-container .container-img-info .inner-card a .info-button:hover {
-  background-color: #f4ebd9;
-  color: black;
-}
-
-.section-row-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 0;
-}
-.section-row-center .line {
-  transform: rotate(90deg);
-  width: 50px;
-  margin: 0;
-}
-.section-row-center .item-container {
-  padding: 30px 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section-row-center .item-container h4 {
-  margin-right: 20px;
-  font-size: 1.2rem;
-}
-.section-row-center .item-container i {
-  margin-top: 3px;
-}
-
-@media (max-width: 1100px) {
-  .grid-container {
-    padding: 0;
-  }
-}
-@media (max-width: 820px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-    row-gap: 30px;
-  }
-  .section-row-center {
-    flex-direction: column;
-  }
-  .section-row-center .line {
-    transform: rotate(0deg);
-    width: 75px;
-  }
-}
-
-/*# sourceMappingURL=index.css.map */

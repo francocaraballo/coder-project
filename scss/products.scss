@@ -1,4 +1,4 @@
-@use 'var';
+@use './layout/layout';
 
 h2 {
     text-align: center;
@@ -64,14 +64,14 @@ h2 {
                 margin: 0 auto;
                 width: 80%;
                 background-color: transparent;
-                border-color: var.$color1;
+                border-color: $color1;
                 border-width: 1px;
                 border-style: solid;
                 padding: 10px;
                 transition: all .5s;
 
                 &:hover {
-                    background-color: var.$color1;
+                    background-color: $color1;
                 }
             }
         }

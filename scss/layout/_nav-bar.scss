@@ -1,0 +1,66 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color1;
+
+    ul {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+        padding: 20px 14px;
+        margin: 0 4px;
+
+        a {
+            color: black;
+            text-decoration: none;
+            display: flex;
+            gap: 5px;
+        }
+
+        
+    }
+}
+
+// Tratar de anidar en la declaracion de arriba
+ul.nav-bar {
+    li {
+        list-style: none;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color5;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        display: block;
+        margin: 0 auto;
+
+        ul {
+            gap: 20px;
+
+            li {
+                padding: 10px;
+                margin: 0;
+            }
+        }
+    }
+
+    // ANIDAR EN LA MEDIA QUERIE ANTERIOR
+    ul.nav-bar li span{
+        display: none;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+    }
+}
