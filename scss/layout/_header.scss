@@ -1,12 +1,7 @@
-@use '../utilities/colors';
 
 header {
     padding: 12px 0;
     background-color: $color6;
-
-    h1 {
-        display: none;
-    }
 
     .logo-title-container {
         display: flex;

@@ -11,9 +11,6 @@ header {
   padding: 12px 0;
   background-color: #fcfcf4;
 }
-header h1 {
-  display: none;
-}
 header .logo-title-container {
   display: flex;
   justify-content: center;
