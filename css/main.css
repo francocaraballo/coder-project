@@ -101,6 +101,9 @@ footer .footer-container-item form {
   display: flex;
   justify-content: center;
 }
+footer .footer-container-item form label {
+  display: none;
+}
 footer .footer-container-item form input {
   padding: 8px 3px;
   border: none;

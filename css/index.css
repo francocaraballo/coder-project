@@ -46,6 +46,7 @@ section .title-section {
 }
 .grid-container .container-img-info img {
   width: 400px;
+  filter: brightness(0.7);
 }
 .grid-container .container-img-info .inner-card {
   position: absolute;
@@ -56,7 +57,7 @@ section .title-section {
 .grid-container .container-img-info .inner-card h5 {
   text-align: center;
   font-size: 1.5rem;
-  color: #fcfcf4;
+  color: whitesmoke;
   margin-bottom: 50px;
 }
 .grid-container .container-img-info .inner-card a {
