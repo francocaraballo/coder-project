@@ -64,6 +64,7 @@ h1 {
 }
 .container-products .product-card .card-info button:hover {
   background-color: #edb183;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=products.css.map */

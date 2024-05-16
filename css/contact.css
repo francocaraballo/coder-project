@@ -3,6 +3,13 @@ h1 {
   font-weight: bold;
 }
 
+nav ul {
+  padding-left: 0;
+}
+nav ul li i svg {
+  vertical-align: text-top;
+}
+
 input[type=submit] {
   display: block;
   margin: 50px auto 0;

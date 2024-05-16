@@ -7,6 +7,8 @@
     <meta name="description" content="Todos nuestros productos, encontra lo que necesita tu piel en un solo lugar.">
     <meta name="keywords" content="Productos, Compra, Precio, Articulos, Jabones">
     <link rel="icon" type="image/png" href="../resources/favicon.png" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/products.css" />
     <title>Odeur Comestics | Productos</title>
@@ -85,7 +87,7 @@
         <h1>Nuestros productos</h1>
         <div class="line"></div>
         <!-- Lista de productos -->
-        <section>
+        <section data-aos="fade-up">
             <div class="container-products">
 
                 <div class="product-card">
@@ -317,6 +319,11 @@
             <h5>Created by Franco</h5>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

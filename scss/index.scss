@@ -64,7 +64,7 @@ section {
 
             h5 {
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: 1.7rem;
                 color: whitesmoke;
                 margin-bottom: 50px;
             }
@@ -76,13 +76,15 @@ section {
                 transform: translateX(-50%);
 
                 .info-button {
-                    padding: 7px 20px;
+                    padding: 12px 25px;
                     border-radius: 13px;
                     margin: 0 auto;
                     background-color: $color1;
                     transition: all .5s;
                     color: white;
                     border: none;
+                    font-size: 1rem;
+                    text-align: center;
                     cursor: pointer;
 
                     &:hover {
